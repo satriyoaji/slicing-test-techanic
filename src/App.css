@@ -1,0 +1,163 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.about-header {
+  background-image: url('../public/techanic/bgheader.png');
+  background-position: center center;
+  background-size: cover;
+  height: 550px;
+}
+.academic-header {
+  background-image: url('../public/asset/graduation.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 450px;
+}
+.news-header {
+  /*background-image: url('../public/asset/news_cartoon.jpg');*/
+  /*background-position: center center;*/
+  /*background-size: cover;*/
+  height: 400px;
+}
+.newest-news {
+  height: 100vh;
+  overflow-y: auto;
+}
+.contact-header {
+  background-image: url('../public/asset/building.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 400px;
+}
+
+.content-bg-grey {
+  background-image: url('../public/asset/bg_grey.jpg');
+  background-size: cover;
+  rotation: 180deg;
+  background-color:rgba(0, 0, 0, 0.6);
+  width: 100%;
+}
+
+.pens-primary {
+  background-color: #103968;
+}
+.tech-primary {
+  background-color: #1829C3;
+}
+
+/* Banner header */
+.pens-banner video {
+  display: block;
+  vertical-align: baseline;
+  min-width: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(50%);
+}
+
+/* Statistic Area */
+.statistic-area {
+  position: relative;
+  background-image: url(../public/asset/banner_pens.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+  opacity: 0.92
+}
+.statistic-area .layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 49, 95, 0.85);
+}
+.textwidget {
+  width: 250px;
+  padding: 0 1rem;
+}
+
+/* Pens TV */
+.bg-pens-tv {
+  background-image: url(../public/asset/cartoon_pens.svg);
+}
+.youtube-pens-tv {
+  /*padding-top: 56.25% */
+}
+
+.bg-news-1{
+  background-image: url(../public/asset/news_6.jpg);
+}
+
+.bg-news-2{
+  background-image: url(../public/asset/news_2.jpg);
+}
+
+.bg-news-3{
+  background-image: url(../public/asset/news_3.jpg);
+}
+
+/*Chatbot*/
+.chatbot-sm {
+  width: 350px;
+}
+
+@media screen and (max-width: 768px) {
+  .chatbot-sm {
+    width: auto;
+    right: 0 !important;
+    bottom: 0 !important;
+    top: 0 !important;
+    left: 0 !important;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    height: 100% !important;
+    position: fixed;
+  }
+}
