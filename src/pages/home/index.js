@@ -3,17 +3,17 @@ import 'tw-elements';
 import "@fontsource/crimson-text";
 import {Widgets, Explanation, Services, Partners, Talents} from "../../dump/aboutContent";
 
-AboutPage.propTypes = {};
+HomePage.propTypes = {};
 
-function AboutPage(props) {
+function HomePage(props) {
     return (
         <>
             <div className="text-center relative overflow-hidden bg-no-repeat bg-cover about-header h-96">
                 <div
-                    className="absolute top-0 right-2 bottom-0 left-2 w-full h-full overflow-hidden bg-fixed"
+                    className="absolute top-0 bottom-0 w-full h-full overflow-hidden bg-fixed"
                     style={{backgroundColor:"rgba(24, 41, 195, 0.6)"}}
                 >
-                    <div className="grid xl:grid-cols-2 grid-cols-1 xl:px-24 my-16 mx-8 px-16 gap-8">
+                    <div className="grid justify-items-start xl:grid-cols-2 grid-cols-1 xl:px-24 my-16 mx-8 px-16 gap-8">
                         <div className="flex justify-center items-center lg:order-last h-full">
                             <img
                                 src="./techanic/header.png"
@@ -21,8 +21,8 @@ function AboutPage(props) {
                                 alt="..."
                             />
                         </div>
-                        <div className="flex-col justify-start items-center h-full left-0 pl-0 ml-0 text-left">
-                            <div className="text-white xl:px-16 px-10">
+                        <div className="grid justify-items-start h-full left-0 pl-0 ml-0">
+                            <div className="text-white text-left xl:px-16 px-10">
                                 <h3 className="text-xl pt-2 font-sans">WELCOME</h3>
                                 <h1 style={{fontFamily: "Crimson Text"}} className="mt-4 text-5xl pt-2 font-crimson">Lorem ipsum dolor sit amet consectetur </h1>
                                 <h5 className="mt-4 text-m pt-2 text-slate-200">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?</h5>
@@ -52,10 +52,10 @@ function AboutPage(props) {
                     {
                         Partners.map((value, idx) => {
                             return (
-                                <div className="flex justify-around">
+                                <div className="flex justify-around" key={idx}>
                                     <img
                                         src={`./techanic/${value}`}
-                                        alt={idx}
+                                        alt={value}
                                     />
                                 </div>
                             )
@@ -134,7 +134,7 @@ function AboutPage(props) {
                     {
                         Talents.map((value, idx) => {
                             return (
-                                <div className="flex flex-col justify-center rounded-lg shadow-lg bg-white max-w-sm text-center">
+                                <div className="flex flex-col justify-center rounded-lg shadow-lg bg-white max-w-sm text-center" key={idx}>
                                     <div className="grid justify-items-center">
                                         <img className="rounded-t-lg"
                                              src={`./techanic/${value.img}`} alt=""/>
@@ -164,4 +164,4 @@ function AboutPage(props) {
     );
 }
 
-export default AboutPage;
+export default HomePage;
