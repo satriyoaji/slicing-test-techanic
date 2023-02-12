@@ -17,8 +17,8 @@ const NavBar = (props) => {
         shadow-lg
         navbar navbar-expand-lg navbar-light"
       >
-        <div className="contents lg:block justify-center items-center mt-2">
-          <img className="pt-4 justify-center items-center top-0" src="/techanic/logo.png" width={120}></img>
+        <div className="contents lg:block xl:justify-center justify-left justify-items-end items-center mt-2">
+          <img className="pt-4 items-center top-0" src="/techanic/logo.png" width={120}></img>
         </div>
         <div className="container-fluid w-full flex flex-wrap items-center px-6 py-2 mt-2 md:w-4/5">
           <button className="
@@ -44,16 +44,16 @@ const NavBar = (props) => {
           <div className="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent">
             <ul className="navbar-nav flex flex-col pl-0 list-style-none ml-auto text-[14px] font-medium">
               <li className="nav-item px-2">
-                <a className="nav-link text-white hover:text-gray-300 focus:text-gray-300 p-0" href="/">BERANDA</a>
+                <a className="nav-link text-white hover:text-gray-300 focus:text-gray-300 p-0" href="/">Home</a>
               </li>
               <li className="nav-item px-2">
-                <a className="nav-link text-white hover:text-gray-300 focus:text-gray-300 p-0" href="/home">TENTANG PENS</a>
+                <a className="nav-link text-white hover:text-gray-300 focus:text-gray-300 p-0" href="/home">Portfolio</a>
               </li>
               <li className="nav-item px-2">
-                <a className="nav-link text-white hover:text-gray-300 focus:text-gray-300 p-0" href="/academic">PENDIDIKAN</a>
+                <a className="nav-link text-white hover:text-gray-300 focus:text-gray-300 p-0" href="/academic">Service</a>
               </li>
               <li className="nav-item px-2">
-                <a className="nav-link text-white hover:text-gray-300 focus:text-gray-300 p-0" href="#footer">KONTAK</a>
+                <a className="nav-link text-white hover:text-gray-300 focus:text-gray-300 p-0" href="#footer">Contact</a>
               </li>
             </ul>
           </div>

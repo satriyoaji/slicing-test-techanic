@@ -23,7 +23,7 @@ function App() {
             <Route path="/" element={<AppContainer />} />
         </Routes>
       </Router>
-      <Chatbot />
+      {/*<Chatbot />*/}
     <FooterBar />
     </>
   );

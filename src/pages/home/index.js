@@ -8,12 +8,12 @@ HomePage.propTypes = {};
 function HomePage(props) {
     return (
         <>
-            <div className="text-center relative overflow-hidden bg-no-repeat bg-cover about-header h-96">
+            <div className="text-center relative overflow-hidden bg-no-repeat bg-cover about-header">
                 <div
                     className="absolute top-0 bottom-0 w-full h-full overflow-hidden bg-fixed"
                     style={{backgroundColor:"rgba(24, 41, 195, 0.6)"}}
                 >
-                    <div className="grid justify-items-start xl:grid-cols-2 grid-cols-1 xl:px-24 my-16 mx-8 px-16 gap-8">
+                    <div className="grid xl:grid-cols-2 grid-cols-1 xl:px-16 lg:px-12 px-4 xl:my-16 lg:my-12 gap-8">
                         <div className="flex justify-center items-center lg:order-last h-full">
                             <img
                                 src="./techanic/header.png"
@@ -21,11 +21,11 @@ function HomePage(props) {
                                 alt="..."
                             />
                         </div>
-                        <div className="grid justify-items-start h-full left-0 pl-0 ml-0">
-                            <div className="text-white text-left xl:px-16 px-10">
-                                <h3 className="text-xl pt-2 font-sans">WELCOME</h3>
-                                <h1 style={{fontFamily: "Crimson Text"}} className="mt-4 text-5xl pt-2 font-crimson">Lorem ipsum dolor sit amet consectetur </h1>
-                                <h5 className="mt-4 text-m pt-2 text-slate-200">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?</h5>
+                         <div className="grid justify-items-start items-center h-full left-0 pl-0 ml-0">
+                            <div className="text-white text-left xl:px-16 lg:px-12">
+                                <h3 className="xl:text-xl text-m font-sans">WELCOME</h3>
+                                <h1 style={{fontFamily: "Crimson Text"}} className="font-semibold xl:mt-4 xl:text-5xl text-3xl xl:pt-2 font-crimson">Lorem ipsum dolor sit amet consectetur </h1>
+                                <h5 className="xl:mt-4 xl:text-m text-sm pt-2 text-slate-200">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?</h5>
                                 <div>
                                     <button
                                         type="button"
@@ -41,10 +41,10 @@ function HomePage(props) {
                 </div>
             </div>
 
-            <div className="mt-8 mx-auto py-12 container font-sans">
-                <div>
+            <div className="mt-8 mx-auto py-8 container font-sans">
+                <div className="px-4 lg:px-0">
                     <h3 className="font-semibold text-center text-lg mb-5 text-blue-700">PARTNERS</h3>
-                    <h1 style={{fontFamily: "Crimson Text"}} className="font-semibold text-center text-5xl font-crimson mb-5">Lorem Ipsum Dolor</h1>
+                    <h1 style={{fontFamily: "Crimson Text"}} className="font-semibold text-center xl:text-5xl text-4xl font-crimson mb-5">Lorem Ipsum Dolor</h1>
                     <h5 className="text-center text-xl mb-5">Lorem ipsum, dolor sit amet consectetur
                         adipisicing elit.</h5>
                 </div>
@@ -63,7 +63,7 @@ function HomePage(props) {
                     }
                 </div>
                 <div className="flex justify-center">
-                    <div className="basis-2 grid justify-items-center">
+                    <div className="">
                         <button
                             type="button"
                             data-mdb-ripple="true"
@@ -73,17 +73,17 @@ function HomePage(props) {
                         </button>
                     </div>
                 </div>
-                <div className="grid xl:grid-cols-2 grid-cols-1 xl:px-12 my-16">
-                    <div className="flex justify-center items-center h-full">
+                <div className="grid justify-items-stretch xl:grid-cols-2 grid-cols-1 my-16">
+                    <div className="flex justify-center items-center h-full xl:px-0 px-4">
                         <img
                             src="./techanic/subheader1.svg"
                             className="block xl:w-[600px] xl:h-[400px] md:w-3/4 h-auto"
                             alt="..."
                         />
                     </div>
-                    <div className="flex-col justify-start h-full left-0 pl-0 ml-0 text-left">
-                        <div className="text-white xl:px-16 px-10">
-                            <h1 style={{fontFamily: "Crimson Text"}} className="mt-4 text-5xl text-black font-semibold pt-2 font-crimson">Lorem ipsum dolor sit amet consectetur </h1>
+                    <div className="flex-col justify-start h-full left-0 pl-0 ml-0">
+                        <div className="text-white xl:px-16 px-4 text-left">
+                            <h1 style={{fontFamily: "Crimson Text"}} className="mt-4 xl:text-5xl text-4xl text-black font-semibold pt-2 font-crimson">Lorem ipsum dolor sit amet consectetur </h1>
                             <h5 className="mt-4 text-m pt-2 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?</h5>
                             <div>
                                 <button
@@ -97,8 +97,8 @@ function HomePage(props) {
                         </div>
                     </div>
                 </div>
-                <div className="grid justify-items-stretch xl:grid-cols-2 grid-cols-1 xl:px-12 my-16">
-                    <div className="flex justify-center items-center h-full">
+                <div className="grid justify-items-stretch xl:grid-cols-2 grid-cols-1 my-16">
+                    <div className="flex justify-center items-center h-full xl:px-0 px-4">
                         <img
                             src="./techanic/subheader2.svg"
                             className="block xl:w-[600px] xl:h-[400px] md:w-3/4 h-auto"
@@ -106,8 +106,8 @@ function HomePage(props) {
                         />
                     </div>
                     <div className="flex-col justify-start h-full left-0 pl-0 ml-0 lg:order-first">
-                        <div className="text-white xl:px-16 px-10 text-left">
-                            <h1 style={{fontFamily: "Crimson Text"}} className="mt-4 text-5xl text-black font-semibold pt-2 font-crimson">Lorem ipsum dolor sit amet consectetur </h1>
+                        <div className="text-white xl:px-16 px-4 text-left">
+                            <h1 style={{fontFamily: "Crimson Text"}} className="mt-4 xl:text-5xl text-4xl text-black font-semibold pt-2 font-crimson">Lorem ipsum dolor sit amet consectetur </h1>
                             <h5 className="mt-4 text-m pt-2 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?</h5>
                             <div>
                                 <button
@@ -123,7 +123,7 @@ function HomePage(props) {
                 </div>
             </div>
 
-            <div className="mx-auto py-12 container font-sans">
+            <div className="mx-auto container font-sans">
                 <div className="mb-8 lg:px-0 px-4">
                     <h3 className="font-semibold text-center text-lg mb-5 text-blue-700">TEAM</h3>
                     <h1 style={{fontFamily: "Crimson Text"}} className="font-semibold text-center text-4xl mb-5">Our Talents</h1>

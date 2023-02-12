@@ -43,9 +43,9 @@ html {
 
 .about-header {
   background-image: url('../public/techanic/bgheader.png');
-  background-position: center center;
+  /*background-position: center center;*/
   background-size: cover;
-  height: 550px;
+  height: 480px;
 }
 .academic-header {
   background-image: url('../public/asset/graduation.jpg');
